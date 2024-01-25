@@ -15,5 +15,22 @@ private:
 	int enemy_count[3];   //通り過ぎた敵カウント
 	Player* player;       //プレイヤー
 	Enemy** enemy;        //敵
+
+public:
+	GameMainScene();
+	virtual ~GameMainScene();
+
+	virtual void Initialize() override;
+	virtual eSceneType Update() override;
+	virtual void Draw() const override;
+	virtual void Finalize() override;
+
+	virtual eSceneType GetNowScene() const override;
+
+private:
+	//ハイスコア読込み処理
+	void ReadHighScore();
+	//当たり判定
+	bool IsHitCheck(Player* p, Enemy* e);
 };
 
