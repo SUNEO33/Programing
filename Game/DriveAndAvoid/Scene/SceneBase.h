@@ -32,5 +32,5 @@ public:
 	virtual void Finalize(){}
 
 	//Œ»İ‚ÌƒV[ƒ“î•ñ‚ğæ“¾
-	virtual eSceneType GetScene() const = 0;
+	virtual eSceneType GetNowScene() const = 0;
 };

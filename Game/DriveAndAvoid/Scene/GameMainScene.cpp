@@ -14,7 +14,7 @@ enemy(nullptr)
 		enemy_count[i] = NULL;
 	}
 }
-GameMainScene::GameMainScene()
+GameMainScene::~GameMainScene()
 {
 
 }

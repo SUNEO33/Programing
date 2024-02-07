@@ -118,14 +118,14 @@ void Player::SetActive(bool flg)
 	this->is_active = flg;
 }
 //体力減少処理
-void Player::DecreaseHp(flost value)
+void Player::DecreaseHp(float value)
 {
 	this->hp += value;
 }
 //位置情報取得処理
 Vector2D Player::GetLocation() const
 {
-	return this->GetLocation;
+	return this->location;
 }
 
 //当たり判定の大きさ取得処理

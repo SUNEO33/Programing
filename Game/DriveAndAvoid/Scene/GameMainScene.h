@@ -7,7 +7,7 @@
 class GameMainScene:public SceneBase
 {
 private:
-	int high score;      //ハイスコア
+	int high_score;      //ハイスコア
 	int back_ground;     //背景画像
 	int barrier_image;    //バリア画像
 	int mileage;          //走行距離

@@ -88,7 +88,7 @@ void RankingData::SortData()
 	//選択法ソートを使用し、降順で入れ替える
 	for (int i = 0; i < 5; i++)
 	{
-		for (int j = 0; i + 1; j < 6; j++)
+		for (int j = i + 1; j < 6; j++)
 		{
 			if (score[i] <= score[j])
 			{
